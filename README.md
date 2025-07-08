@@ -1,7 +1,6 @@
 # SQuest: Smart Summarizer & Question Answerer
 
 
-## 🚀 Overview
 
 SQuest (Smart Quest) is an intelligent command-line tool designed for efficient text summarization and interactive question-answering. It harnesses the power of state-of-the-art Natural Language Processing (NLP) models from Hugging Face Transformers. Users can quickly condense large texts into customizable summaries and then query those summaries for specific information, making information extraction intuitive and fast.
 
