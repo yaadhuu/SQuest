@@ -1,7 +1,5 @@
 # SQuest: Smart Summarizer & Question Answerer
 
-![SQuest Logo](https://via.placeholder.com/150/007bff/ffffff?text=SQuest+Logo)
-*Replace this placeholder with an actual logo or a simple, appealing icon for your project!*
 
 ## 🚀 Overview
 
@@ -18,15 +16,7 @@ Whether you're looking to grasp the core ideas of a lengthy article or get quick
 * **User-Friendly Interface:** Simple command-line prompts guide you through text input, summary length selection, and interactive question-asking.
 * **Built with LangChain:** Leverages the LangChain framework for seamless integration and chaining of NLP models, offering a modular and scalable architecture.
 
-## 📽️ Demo
 
-*To make your README truly interactive, replace the placeholders below with actual GIFs or screenshots showcasing SQuest in action!*
-
-**Example GIF/Screenshot 1: Summarization in action**
-![Summarization Demo](https://via.placeholder.com/600x300/e0e0e0/000000?text=Summarization+Demo+GIF/Screenshot)
-
-**Example GIF/Screenshot 2: Interactive QA session**
-![QA Demo](https://via.placeholder.com/600x300/e0e0e0/000000?text=QA+Demo+GIF/Screenshot)
 
 ## 🛠️ Technologies Used
 
@@ -61,21 +51,6 @@ If you have an NVIDIA GPU, configuring CUDA and CuDNN is vital for optimal perfo
 * **Install CUDA Toolkit:**
     * Download and install the appropriate CUDA Toolkit version from the [NVIDIA CUDA Toolkit Archive](https://developer.nvidia.com/cuda-toolkit-archive). **Select the version that matches your GPU driver and PyTorch's compatibility matrix.**
     * **Crucial Step:** Follow NVIDIA's official installation instructions precisely. This typically involves correctly setting environment variables like `PATH` and `CUDA_HOME`.
-
-* **Install CuDNN:**
-    * CuDNN (CUDA Deep Neural Network library) is essential for accelerating deep learning operations.
-    * Register for the [NVIDIA Developer Program](https://developer.nvidia.com/rdp/form/cudnn-download-survey) (it's free).
-    * Download the CuDNN version compatible with your installed CUDA Toolkit.
-    * Extract the CuDNN files and **copy them into your CUDA Toolkit installation directory**. For example, copy the contents of the extracted `bin`, `include`, and `lib` folders into the corresponding `bin`, `include`, and `lib` folders within your CUDA installation (e.g., `C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\vX.Y\` on Windows, or `/usr/local/cuda/` on Linux).
-
-* **Verify CUDA Installation:**
-    * Open your terminal or command prompt and run:
-        ```bash
-        nvcc --version
-        ```
-    * This command should display your installed CUDA Toolkit version, confirming a successful installation.
-
----
 
 ### **2. Project Setup**
 
@@ -136,26 +111,4 @@ If you have an NVIDIA GPU, configuring CUDA and CuDNN is vital for optimal perfo
 
     *SQuest automatically detects if a GPU (CUDA) is available and utilizes it for faster processing. If not, it gracefully falls back to using the CPU.*
 
-## 🚀 How to Use
 
-1.  **Run the SQuest Application:**
-    Ensure your virtual environment is activated, then navigate to the project's root directory and execute the main script:
-    ```bash
-    python main.py
-    ```
-    *(If your main script is named differently, e.g., `squest_app.py`, use that filename instead.)*
-
-2.  **Follow the Prompts:**
-    The application will provide clear prompts for interaction:
-
-    * `Enter text to summarize (or type 'exit' to quit SQuest):`
-        * Paste or type the text you want to condense.
-    * `Enter the desired summary length (short/medium/long, default is medium):`
-        * Type `short`, `medium`, or `long`. If left blank, it defaults to `medium`.
-    * The **Generated Summary** will be displayed.
-    * `Ask a question about the summary (or type 'new text' to summarize another, 'exit' to quit):`
-        * Type your question and press Enter.
-        * To summarize a **new text**, type `new text` and press Enter.
-        * To **exit** the application completely, type `exit` and press Enter.
-
-### Example Interaction
